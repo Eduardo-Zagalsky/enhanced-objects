@@ -34,4 +34,13 @@ const instructor = {
     sayBye() {
         return this.firstName + " says bye!";
     }
+};
+
+const createAnimal = (species, func, sound) => {
+    return {
+        species,
+        [func]() {
+            return sound;
+        }
+    }
 }

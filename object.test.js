@@ -14,3 +14,9 @@ describe("Object Methods", function () {
         expect(instructor.sayBye()).toEqual("Colt says bye!")
     });
 });
+describe("createAnimal", () => {
+    it("should create a new animal and its sound", () => {
+        let d = createAnimal("dog", "bark", "Woof Woof")
+        expect(d.bark()).toEqual("Woof Woof");
+    });
+});
