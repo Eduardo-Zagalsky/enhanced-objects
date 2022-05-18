@@ -12,7 +12,26 @@ const createInstructor = (firstName, lastName) => ({ firstName, lastName });
 // }
 // instructor[favoriteNumber] = "That is my favorite!"
 let favoriteNumber = 42;
-const instructor = {
-    firstName: "Colt",
+const player = {
+    firstName: "Jackie",
     [favoriteNumber]: "That is my favorite!"
 };
+
+// var instructor = {
+//     firstName: "Colt",
+//     sayHi: function () {
+//         return "Hi!";
+//     },
+//     sayBye: function () {
+//         return this.firstName + " says bye!";
+//     }
+// }
+const instructor = {
+    firstName: "Colt",
+    sayHi() {
+        return "Hi!";
+    },
+    sayBye() {
+        return this.firstName + " says bye!";
+    }
+}

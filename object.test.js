@@ -5,6 +5,12 @@ describe("Same keys and Values", function () {
 });
 describe("Property Name", function () {
     it("should initialize and declare the value simultaniously", function () {
-        expect(instructor).toEqual({ firstName: "Colt", 42: "That is my favorite!" })
+        expect(player).toEqual({ firstName: "Jackie", 42: "That is my favorite!" })
+    });
+});
+describe("Object Methods", function () {
+    it("should say hi and bye to the instructor", function () {
+        expect(instructor.sayHi()).toEqual("Hi!");
+        expect(instructor.sayBye()).toEqual("Colt says bye!")
     });
 });
